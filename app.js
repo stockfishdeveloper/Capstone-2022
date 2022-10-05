@@ -7,7 +7,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200
   res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream('index').pipe(res)
+  fs.createReadStream('index.html').pipe(res)
 })
 
 server.listen(port, hostname, () => {
