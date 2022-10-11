@@ -53,8 +53,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50%;
-        text-align: center;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       a:visited {
         color:white;
@@ -70,16 +71,6 @@
         padding-bottom:20px;
         border-radius: 10px;
       }
-
-      .indexbody {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        vertical-align: center;
-      }
-
-
 
       input {
         text-align: center;
@@ -97,7 +88,7 @@
     </style>
     
 </head>
-    <body class="indexbody">
+    <body>
       <div class="whiteBackground">
         <form method = "post" id = "loginForm">
 
