@@ -17,7 +17,7 @@
 
     <!-- Our css styles will go here -->
     <style>
-      #loginForm {
+      #registerForm {
         text-align: center;
         width: 10%;
         margin-left: auto;
@@ -32,46 +32,30 @@
         margin-top: 15px;
         width:50%;
       }
-
-      #registerButton {
-        background-color: #840029;
-        color: white;
-        margin-top: 15px;
-        width:50%;
-      }
       
-      .toRegister {
-        text-align: center;
-        width: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        display: block;
-        color: #840029;
-      }
     </style>
     
 </head>
     <body>
       <div>
-        <form method = "post" id = "loginForm">
+        <form method = "post" id = "registerForm">
 
             <div class="username">
-              <label for="username">Email address:</label>
-              <input type="text" class="form-control" id="inputEmail" placeholder="Enter email">
+              <label for="username">Username:</label>
+              <input type="text" class="form-control" id="registerEmail" placeholder="Enter username">
             </div>
+            <div class="email">
+                <label for="username">Email address:</label>
+                <input type="text" class="form-control" id="registerEmail" placeholder="Enter email">
+              </div>
 
             <div class="password">
               <label for="password">Password:</label>
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              <input type="password" class="form-control" id="registerPassword" placeholder="Enter Password">
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" id="submitButton">Login</button>
           </form>
-          <div class="toRegister">
-            <p>Don't have a username?</p>
-            <button class="btn"><link href="register.html">Register</link></button></button>
-          </div>
       </div>
       <!--JS for login-->
       <script type = "text/javascript">
